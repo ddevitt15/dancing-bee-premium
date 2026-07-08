@@ -1,0 +1,16 @@
+import type { CollectionSlug } from '@/types';
+
+export const collections: { slug: CollectionSlug; name: string; line: string; seoTitle: string; seoDescription: string }[] = [
+  { slug: 'mastectomy-recovery-gifts', name: 'Mastectomy Recovery Gifts', line: 'Comfort after surgery', seoTitle: 'Mastectomy Recovery Gifts | Handmade Comfort Care Packages', seoDescription: 'Send a thoughtful handmade mastectomy recovery gift with comfort items, port pillows, recovery pillows, drain holders, and meaningful care-package details.' },
+  { slug: 'cancer-care-packages', name: 'Cancer Care Packages', line: 'Care when words feel hard', seoTitle: 'Cancer Care Packages | Handmade Gifts for Comfort & Support', seoDescription: 'Shop handmade cancer care packages, chemo care gifts, port pillows, and thoughtful recovery gifts crafted to send comfort and encouragement.' },
+  { slug: 'port-pillows', name: 'Port Pillows', line: 'Small support with big meaning', seoTitle: 'Port Pillows | Handmade Comfort Pillows for Treatment & Travel', seoDescription: 'Handmade minky port pillows designed to cushion seatbelts for treatment, travel, chemo ports, pacemakers, and recovery.' },
+  { slug: 'recovery-pillows', name: 'Recovery Pillows', line: 'Soft comfort where it matters', seoTitle: 'Recovery Pillows | Handmade Comfort Pillows', seoDescription: 'Shop handmade heart pillows and recovery pillows for post-surgery support and everyday comfort.' },
+  { slug: 'drain-holders', name: 'Drain Holders', line: 'Discreet practical support', seoTitle: 'Drain Holders | Handmade Surgical Recovery Gifts', seoDescription: 'Handmade waist and shower drain holders for mastectomy, lumpectomy, reconstruction, and surgical recovery care packages.' },
+  { slug: 'personalized-ornaments', name: 'Personalized Ornaments', line: 'Personalized memories that last', seoTitle: 'Personalized Handmade Ornaments | Dancing Bee Designs', seoDescription: 'Personalized handmade ornaments for graduation, holidays, state pride, milestones, and thoughtful keepsake gifting.' },
+  { slug: 'religious-keepsakes', name: 'Religious Keepsakes', line: 'Faith-filled encouragement', seoTitle: 'Religious Keepsakes & Faith-Based Gifts | Dancing Bee Designs', seoDescription: 'Meaningful religious keepsakes and faith-based handmade gifts for encouragement, prayer, and milestones.' },
+  { slug: 'graduation-gifts', name: 'Graduation Gifts', line: 'Celebrate the next chapter', seoTitle: 'Personalized Graduation Gifts & Ornaments | Dancing Bee Designs', seoDescription: 'Personalized handmade graduation ornaments and keepsakes for high school, college, masters, and doctoral milestones.' },
+  { slug: 'handmade-gifts', name: 'Handmade Gifts', line: 'Made to feel personal', seoTitle: 'Handmade Gifts | Dancing Bee Designs', seoDescription: 'Warm handmade gifts, keepsakes, ornaments, comfort items, and thoughtful details made by Dancing Bee Designs.' },
+  { slug: 'craft-tools-patterns', name: 'Craft Tools / Patterns', line: 'Make something meaningful', seoTitle: 'Craft Tools & Patterns | Dancing Bee Designs', seoDescription: 'Digital patterns and craft tools from Dancing Bee Designs for handmade projects and keepsakes.' }
+];
+
+export const collectionName = (slug: CollectionSlug) => collections.find((c) => c.slug === slug)?.name ?? slug;
